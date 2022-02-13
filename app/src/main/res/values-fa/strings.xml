@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">گزارشگر</string>
+    <string name="click_addreport_to_add_new_report">برای اضافه کردن گزارش بر روی دکمه اضافه کردن گزارش کلیک کنید</string>
+    <string name="first_time_here">برای بار اول اینجا کلیک کنید</string>
+    <string name="got_it">ورود</string>
+    <string name="lastname">تخلص</string>
+    <string name="name">نام</string>
+    <string name="password">رمز</string>
+    <string name="report">گزارش</string>
+    <string name="send">ارسال</string>
+    <string name="sign_in">ورود</string>
+    <string name="sign_in_title">ورود</string>
+    <string name="sign_up">راجستر</string>
+    <string name="sign_up_title">راجستر</string>
+    <string name="username">نام کاربری</string>
+    <string name="welcome_to_reporter_app">به اپلیکشن گزارشگر خوش آمدید</string>
+    <string name="about">درباره</string>
+    <string name="addreport">اضافه کردن گزارش</string>
+    <string name="delete">حذف</string>
+    <string name="deleteall">حذف همه</string>
+    <string name="edit">ویرایش</string>
+    <string name="logout">خروج</string>
+    <string name="share">به اشتراک گذاری</string>
+    <string name="skip">بگذر</string>
+    <string name="loading">درحال بارگیری...</string>
+    <string name="error_toast">"مشکل در اتصال شبکه "</string>
+    <string name="exist">برای خروج کلید بازگشت را دوباره فشاردهید</string>
+    <string name="info_toast">نام کاربری یا رمز اشتباه است</string>
+    <string name="logout_text">آیا میخواهید خارج شوید</string>
+    <string name="no">نخیر</string>
+    <string name="success_toast">موفقیت</string>
+    <string name="warning_toast">مشکل در سرویس دهی</string>
+    <string name="yes">بله</string>
+    <string name="choose_one">یکی را انتخاب کن</string>
+    <string-array name="section">
+        <item>یک بخش را انتخاب کنید</item>
+        <item>توسعه دهنده آندروید</item>
+        <item>توسعه دهنده بازی</item>
+        <item>توسعه دهنده وبسایت</item>
+        <item>گرافیک دیزاینر</item>
+
+    </string-array>
+    <string name="write_last_name">لطفا تخلص خود را وارد کنید</string>
+    <string name="write_name">لطفا نام خود را وارد کنید</string>
+    <string name="write_report">لطفا گزارش خود را وارد کنید</string>
+    <string name="write_user_name">لطفا نام کاربری خود را وارد کنید</string>
+    <string name="write_password">رمز باید حداقل 6 حرف یا عدد باشد</string>
+    <string name="choose_section">شما باید بخش خود را انتخاب کنید</string>
+    <string name="create_report">گزارشات خود را ساده و آسان تهیه نمایید</string>
+    <string name="create_report_title">تهیه گزارشات</string>
+    <string name="mange_time">زمان خود را به شکل حرفه ای مدیریت کنید</string>
+    <string name="mange_time_title">مدیریت زمان</string>
+    <string name="send_report">"گزارشات خود را سریع ارسال نمایید و  آنها را واضح ببینید "</string>
+    <string name="send_report_title">ارسال گزارشات</string>
+    <string name="user">کاربر</string>
+    <string name="version">نسخه 1.0</string>
+    <string name="connect_us"> با ما در ارتباط باشید </string>
+    <string name="advertise_us"> با ما تبلیغ کنید </string>
+    <string name="about_page">آسوده آور یک شرکت تکنالوژی معلوماتی است, مرکز آن درهرات - افغانستان بوده, تمرکز آن بر طراحی و توسعه وب سایت ها و برنامه های وب ، توسعه برنامه های موبایل، خدمات میزبانی وب ، طراحی گرافیک و طراحی بانک اطلاعات می باشد. آسوده آور قصد دارد تجارت ها را ساده تر و بهتر کند</string>
+
+</resources>

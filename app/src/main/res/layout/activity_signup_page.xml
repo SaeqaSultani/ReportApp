@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay_dark_100"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_title"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="40dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="35dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/activity_Signup_page_EditText_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_mlarge"
+                    android:singleLine="true"
+                    android:textColor="@color/overlay_light_90"
+                    android:textColorHint="@color/overlay_light_90" />
+
+
+                <EditText
+                    android:id="@+id/activity_Signup_page_EditText_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lastname"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_mlarge"
+                    android:singleLine="true"
+                    android:textColor="@color/overlay_light_90"
+                    android:textColorHint="@color/overlay_light_90" />
+
+
+                <EditText
+                    android:id="@+id/activity_Signup_page_EditText_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_mlarge"
+                    android:singleLine="true"
+                    android:textColor="@color/overlay_light_90"
+                    android:textColorHint="@color/overlay_light_90" />
+
+
+
+                <EditText
+                    android:id="@+id/activity_Signup_page_EditText_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    app:passwordToggleEnabled="true"
+                    android:maxLines="1"
+                    android:padding="@dimen/spacing_mlarge"
+                    android:singleLine="true"
+                    android:textColor="@color/overlay_light_90"
+                    android:textColorHint="@color/overlay_light_90" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:padding="@dimen/spacing_large"
+                        android:backgroundTint="@color/amber_A700"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/activity_Signup_page_TextView_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:paddingTop="@dimen/spacing_large"
+                        android:paddingEnd="@dimen/spacing_large"
+                        android:background="@color/overlay_dark_100"
+                        android:textColor="@color/overlay_light_90"
+                        android:layout_marginLeft="@dimen/spacing_large"/>
+
+                </FrameLayout>
+
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/btn_rounded_white"
+                    android:onClick="btn_signin_women"
+                    android:text="@string/sign_up"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/spacing_middle">
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/spin_kit"
+                        style="@style/SpinKitView.Small.Circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:SpinKit_Color="@color/grey_600"
+                        android:layout_marginRight="@dimen/spacing_middle"/>
+
+                    <TextView
+                        android:id="@+id/text_view_load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/loading"
+                        android:visibility="gone"
+                        android:textColor="@color/grey_400" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+

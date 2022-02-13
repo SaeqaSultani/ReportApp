@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="popupTheme">@style/popupTheme</item>
+        <item name="android:spinnerItemStyle">@style/mySpinnerItemSelectedStyle</item>
+
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="EditText.Yellow" parent="@style/AppTheme">
+        <item name="colorControlNormal">@color/grey_5</item>
+        <item name="colorControlActivated">@color/amber_500</item>
+        <item name="colorControlHighlight">@color/amber_500</item>
+    </style>
+
+    <style name="popupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/overlay_light_90</item>
+        <item name="android:textColor">@color/overlay_dark_100</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="mySpinnerItemSelectedStyle" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textColor">@color/overlay_dark_100</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:title="@string/addreport"
+            android:id="@+id/add_report"
+            android:icon="@drawable/ic_create"/>
+
+        <item
+            android:title="@string/about"
+            android:id="@+id/abuot"
+            android:icon="@drawable/ic_group"/>
+
+        <item
+        android:id="@+id/share"
+        android:title="@string/share"
+            android:icon="@drawable/ic_share"/>
+
+        <item
+            android:title="@string/logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            />
+
+
+</menu>

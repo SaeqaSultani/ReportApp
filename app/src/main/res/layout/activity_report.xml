@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".netnwork_postreport.ReportActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/amber_A700"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".netnwork_postreport.ReportActivity"
+        >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_large"
+                android:gravity="center"
+                android:textColorHint="@color/grey_40">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_report_EditText_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:padding="@dimen/spacing_large"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="@string/report"
+                    android:inputType="textMultiLine"
+                    android:maxLines="13"
+                    android:minLines="7" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_rounded_white"
+                android:text="@string/send"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/spacing_middle">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit_report"
+                style="@style/SpinKitView.Small.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/grey_600"
+                android:layout_marginRight="@dimen/spacing_middle"/>
+
+            <TextView
+                android:id="@+id/text_view_load_report"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/loading"
+                android:visibility="gone"
+                android:textColor="@color/grey_400" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
